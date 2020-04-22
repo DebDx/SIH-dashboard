@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+.po{
+    background-color: royalblue;
+    height: 100px;
+}
+
+.op{
+    background-color: gray;
+    padding: 20px;
+}
+

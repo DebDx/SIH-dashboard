@@ -1,0 +1,56 @@
+body{
+  background-color: #ccedd2;
+}
+
+/*----- NAVBAR PART------------------------------------------------------------------------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+  overflow: hidden;
+  background-color:#effcef;
+  border-radius: 1em;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+li {
+  float: right;
+}
+
+.iconimg{
+  width:3.5em;
+  height: 3.5em;
+  margin-left: 3em;
+}
+
+li a {
+  display: block;
+  color:#394a6d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+li a:hover:not(.active) {
+  color:white;
+  text-decoration: none;
+
+}
+/*---------THE GRID PART-----------------------------------------------------------------*/
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, [col] 500px ) ;
+  margin-top: 5em;
+}
+.box{
+  background-color: #effcef;
+  border-radius: 1em;
+}
+.a {
+  grid-column: col / span 2;
+}
+.b{
+  padding: 3em;
+}
