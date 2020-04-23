@@ -41,16 +41,31 @@ li a:hover:not(.active) {
 .wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, [col] 500px ) ;
-  margin-top: 5em;
+  grid-template-columns: repeat(auto-fill,minmax(320px,1fr)) ;
+  margin-top: 3px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .box{
+  margin: 2px;
   background-color: #effcef;
   border-radius: 1em;
+  width: 1fr;
 }
 .a {
   grid-column: col / span 2;
 }
 .b{
-  padding: 3em;
+  padding: 0;
 }
+/*
+.graphflex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.flexitem{
+  flex-basis: auto;
+  margin: 0.2em;
+}*/

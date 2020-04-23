@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Map Dashboard</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,22 +24,15 @@
       <li><a href="blah">About</a></li>
     </ul>
   </div>
-  <div class="container">
+  <div id="mapid" style="height: 400px; width: 100%;margin: 0.5em; border-radius: 0.5em;" ></div>
+       
     <div class="wrapper">
-      <div class="box a">
-       
-
-          <div id="mapid" style="height: 400px; width: 100%" >
-       
+        <div class="box b flexitem">
+          <div id="chartContainer" style="height: 300px;width: 100%; border-radius: 5em"></div>
         </div>
-      </div>
-      <div class="box b">
-        <div id="chartContainer" style="height: 300px;"></div>
-      </div>
-      <div  class="box b" >
-        <div id="chartContainer1" style="height: 300px;"></div>
-      </div>
-    </div>
+        <div  class="box b flexitem" >
+          <div id="chartContainer1" style="height: 300px;width: 100%; border-radius: 5em"></div>
+        </div>
     <br>
   </div>
   <footer>
@@ -96,7 +89,9 @@ var dps = [];   //dataPoints.
    
 	 var chart = new CanvasJS.Chart("chartContainer",{
       	title :{
-      		text: "Data Plotted from Array"
+      		text: "Data Plotted from Array",
+          fontFamily: "'Fira Sans', sans-serif",
+          fontStyle: "bold"
       	},
       	axisX: {						
       		title: "Axis X Title"
@@ -126,7 +121,9 @@ var dps = [];   //dataPoints.
    
 	 var chart = new CanvasJS.Chart("chartContainer1",{
       	title :{
-      		text: "Data Plotted from Array"
+      		text: "Data Plotted from Array",
+          fontFamily: "'Fira Sans', sans-serif",
+          fontStyle: "bold"
       	},
       	axisX: {						
       		title: "Axis X Title"
